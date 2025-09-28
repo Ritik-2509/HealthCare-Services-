@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Testimonials</title>
+  <style>
+   
+.services {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #718096;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+              background: rgb(230, 92, 92);
+              color: #f7fafc;
+        }
+
+        .service-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-content {
+            padding: 1.5rem;
+        }
+
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+
+  </style>
+</head>
+<body style="background-color: #335f89;">
+<button style="background-color: rgb(240, 234, 234); border-radius: 10px; border: none; text-decoration: none;"><a href="index2.html">Back</a></button>
+  
+  <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" style="color: aliceblue;">Our Medical Specialties</h2>
+            <p class="section-subtitle" style="color: aliceblue;">Comprehensive healthcare services under one roof</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url(c1.jpg);"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Cardiology</h3>
+                        <p>Advanced cardiac care with state-of-the-art catheterization lab and cardiac surgery facilities.</p>
+                        
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('c2.png');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Neurology</h3>
+                        <p>Comprehensive neurological care including stroke unit, epilepsy center, and neurosurgery.</p>
+                       
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('c3.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Oncology</h3>
+                        <p>Complete cancer care with medical oncology, radiation therapy, and surgical oncology.</p>
+                        
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('c4.jpg');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Orthopedics</h3>
+                        <p>Joint replacement, sports medicine, and minimally invasive orthopedic procedures.</p>
+                        
+                    </div>
+                </div>
+               
+    </section>
+
+</body>
+</html>

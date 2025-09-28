@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Medical Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-box {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .report-box {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f9fafc;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      display: none;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="background-color: #335f89;">
+
+  
+  <div class="form-box">
+    <h2>Get Your Report</h2>
+    <form id="reportForm">
+      <label for="name">Patient Name</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="id">Patient ID</label>
+      <input type="text" id="id" name="id" required>
+      
+      <button type="submit">Get Report</button>
+      <button style="background-color: rgb(240, 234, 234); border-radius: 10px; border: none; text-decoration: none;"><a href="index2.html">Back</a></button>
+    </form>
+    <div class="error" id="error"></div>
+    
+    <div class="report-box" id="reportBox">
+      <h3>Medical Report</h3>
+      <p><b>Name:</b> <span id="rName"></span></p>
+      <p><b>ID:</b> <span id="rId"></span></p>
+      <p><b>Diagnosis:</b> <span id="rDiagnosis"></span></p>
+      <p><b>Prescription:</b> <span id="rPrescription"></span></p>
+    </div>
+  </div>
+
+  <script>
+    // Dummy reports data (replace with real API/database later)
+    const reports = {
+      "MED001": {
+        name: "Rishabh Singh",
+        diagnosis: "Viral Fever",
+        prescription: "Paracetamol 500mg, Rest, Hydration"
+      },
+      "MED002": {
+        name: "Anita Sharma",
+        diagnosis: "Diabetes Type 2",
+        prescription: "Metformin 500mg, Diet Control"
+      }
+    };
+
+    const form = document.getElementById("reportForm");
+    const errorDiv = document.getElementById("error");
+    const reportBox = document.getElementById("reportBox");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const id = document.getElementById("id").value.trim().toUpperCase();
+
+      if (reports[id] && reports[id].name.toLowerCase() === name.toLowerCase()) {
+        errorDiv.textContent = "";
+        document.getElementById("rName").textContent = reports[id].name;
+        document.getElementById("rId").textContent = id;
+        document.getElementById("rDiagnosis").textContent = reports[id].diagnosis;
+        document.getElementById("rPrescription").textContent = reports[id].prescription;
+        reportBox.style.display = "block";
+      } else {
+        reportBox.style.display = "none";
+        errorDiv.textContent = "No report found. Please check Patient ID and Name.";
+      }
+    });
+  </script>
+</body>
+</html>

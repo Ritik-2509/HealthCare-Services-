@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Plus - Leading Multi-Specialty Healthcare</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                MediCare
+            </div>
+            <nav class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="certificates.html">Certifications</a></li>
+               
+                <li><a href="#appointment">Contact</a></li>
+                <button id="lang-btn" class="lang-btn" aria-label="Change language">हिंदी</button>
+                <button id="lang-btn" class="lang-btn" aria-label="Change language"> <a href="signup.html"  style="text-decoration: none; color: rgb(20, 20, 20);" >Signup</a></button>
+      </nav>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Excellence in Healthcare</h1>
+            <p>Comprehensive medical care with cutting-edge technology and compassionate professionals. Your health is our priority.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary" onclick="openModal('appointmentModal')">
+                    <i class="fas fa-calendar-plus"></i> Book Appointment
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <i class="fas fa-stethoscope"></i> Our Services
+                </a>
+            
+            </div>
+            <div class="emergency">
+             <a href="tel:+911234567890" class="emergency-btn">
+                Emergency: +91-1234-567-890
+            </a></div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose MediCare Plus?</h2>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>NABH Accredited</h3>
+                    <p  class="pp">National Accreditation Board for Hospitals & Healthcare Providers certified facility</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Doctors</h3>
+                    <p>50+ experienced specialists with international training and certifications</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Emergency</h3>
+                    <p>Round-the-clock emergency services with dedicated trauma care unit</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">
+                        <i class="fas fa-thumbs-up"></i>
+                    </div>
+                    <h3>98% Success Rate</h3>
+                    <p>Outstanding treatment outcomes with patient satisfaction guaranteed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Medical Specialties</h2>
+            <p class="section-subtitle">Comprehensive healthcare services under one roof</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzox7lm7dmoCSdbH6Z_R96_IyAxjrKawooUQ&s');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Cardiology</h3>
+                        <p>Advanced cardiac care with state-of-the-art catheterization lab and cardiac surgery facilities.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv5UTTzXzVlMmxcfX4Wh6zpDDib2kUocdUtA&s');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Neurology</h3>
+                        <p>Comprehensive neurological care including stroke unit, epilepsy center, and neurosurgery.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Oncology</h3>
+                        <p>Complete cancer care with medical oncology, radiation therapy, and surgical oncology.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Orthopedics</h3>
+                        <p>Joint replacement, sports medicine, and minimally invasive orthopedic procedures.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN1HHg-XbGuuCgXHgf5IGwnawFQ0xXps2MDdhHK0BcaKsA2ExtURNBEdI&s');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Pediatrics</h3>
+                        <p>Specialized child healthcare with NICU, pediatric surgery, and child development center.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');"></div>
+                    <div class="service-content">
+                        <h3 class="service-title">Emergency Care</h3>
+                        <p>24/7 emergency services with trauma center, ambulance services, and critical care.</p>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <h2 class="section-title">Meet Our Expert Doctors</h2>
+            <p class="section-subtitle">Experienced professionals dedicated to your health</p>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image" style="background-image: url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80');"></div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Rajesh Kumar</h3>
+                        <p class="doctor-specialty">Senior Cardiologist</p>
+                        <p>MBBS, MD, DM (Cardiology)<br>20+ years experience</p>
+                        <div class="availability">Available Today</div>
+                        <button class="btn btn-primary" onclick="openModal('appointmentModal')" style="margin-top: 1rem;">Book Appointment</button>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22w4Y_ZiMfui2o3zJhKYDa8EfTtkLlQvoqA&s');"></div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Priya Sharma</h3>
+                        <p class="doctor-specialty">Neurologist</p>
+                        <p>MBBS, MD, DM (Neurology)<br>15+ years experience</p>
+                        <div class="availability">Available Tomorrow</div>
+                        <button class="btn btn-primary" onclick="openModal('appointmentModal')" style="margin-top: 1rem;">Book Appointment</button>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-image" style="background-image: url('https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80');"></div>
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Amit Patel</h3>
+                        <p class="doctor-specialty">Orthopedic Surgeon</p>
+                        <p>MBBS, MS (Ortho), MCh<br>18+ years experience</p>
+                        <div class="availability">Available Today</div>
+                        <button class="btn btn-primary" onclick="openModal('appointmentModal')" style="margin-top: 1rem;">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Patient-Centric Features</h2>
+            <p class="section-subtitle">Making healthcare accessible and convenient for everyone</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="feature-title">Telemedicine</h3>
+                    <p>Consult with doctors from the comfort of your home through secure video calls.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Online Reports</h3>
+                    <p>Access your medical reports, test results, and prescriptions anytime, anywhere.</p>
+                     <a href="online-repo.html" class="btn btn-primary" style="margin-top: 1rem;">Report</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="feature-title">Insurance Support</h3>
+                    <p>Cashless treatment with 100+ insurance providers and transparent billing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3 class="feature-title">Multi-Language</h3>
+                    <p>Services available in Hindi, English, Marathi, and Gujarati languages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3 class="feature-title">Accessibility</h3>
+                    <p>Wheelchair accessible facilities with text-to-speech and easy navigation.</p>
+                </div>
+                <div class="feature-card" >
+                    <div class="feature-icon">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <h3 class="feature-title">Health Blog</h3>
+                    <p>Stay informed with expert health tips, wellness articles, and medical updates.</p>
+                      <a href="Blog.html" class="btn btn-primary" style="margin-top: 1rem;">Info-Blog</a>
+                </div>
+            </div>
+        </div></section>
+        <section class="testimonials">
+    <h2>What Our Patients Say</h2>
+
+    <div class="testimonial-container">
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Patient">
+          <div>
+            <div class="testimonial-name">Sarah Johnson</div>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          The doctors were very kind and professional. The facilities were clean and well-maintained. 
+          I felt truly cared for during my treatment.
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient">
+          <div>
+            <div class="testimonial-name">Michael Lee</div>
+            <div class="testimonial-rating">★★★★☆</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          The nursing staff was extremely supportive. The treatment process was explained clearly and I recovered faster than expected.
+        </p>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Patient">
+          <div>
+            <div class="testimonial-name">Priya Sharma</div>
+            <div class="testimonial-rating">★★★★★</div>
+          </div>
+        </div>
+        <p class="testimonial-text">
+          I had a wonderful experience here. Everything from the consultation to the follow-up was smooth and comforting. Highly recommend this hospital!
+        </p>
+      </div>
+
+    </div>
+  </section>
+    </section>
+   
+
+
+
+    <h1>Contact & Appointments</h1>
+
+   
+
+    <section id="appointment" class="card appointment-form">
+      <h2>Book an Appointment</h2>
+      <form id="appointmentForm" onsubmit="return submitAppointment(event)">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}" />
+
+        <label for="dept">Department</label>
+        <select id="dept" name="dept" required>
+          <option value="">Select</option>
+          <option>Cardiology</option>
+          <option>Orthopedics</option>
+          <option>Neurology</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input id="date" name="date" type="date" required />
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+
+        <button class="btn primary" type="submit">Submit</button>
+      </form>
+      <p id="formStatus" class="form-status" aria-live="polite"></p>
+    </section>
+
+    <section class="card map">
+      <h2>Location</h2>
+      <!-- Static embed placeholder -->
+      <div class="map-placeholder">Map placeholder (use embed or iframe)</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>CareWell Hospital</h3>
+        <p>123 Health Street, City • +91 12345 67890</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>© 2025 CareWell Hospital</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+    <!-- Health Packages -->
+    <section class="packages" id="packages">
+    
+<section>
+<!-- Appointment Modal -->
+<div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('appointmentModal')">&times;</span>
+    <h2>Book an Appointment</h2>
+    <form class="appointment-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="doctor">Select Doctor</label>
+      <select id="doctor" required>
+        <option value="">-- Choose Doctor --</option>
+        <option value="Dr. Rajesh Kumar">Dr. Rajesh Kumar (Cardiologist)</option>
+        <option value="Dr. Priya Sharma">Dr. Priya Sharma (Neurologist)</option>
+        <option value="Dr. Amit Patel">Dr. Amit Patel (Orthopedic Surgeon)</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" required>
+
+      <label for="message">Additional Notes</label>
+      <textarea id="message" rows="3" placeholder="Any special request..."></textarea>
+
+      <button type="submit" class="submit1" >Confirm Appointment</button>
+    </form>
+  </div>
+</div>
+
+</section>
+<!-- Footer Section -->
+<footer style="background: #0c3c78; color: white; padding: 40px 20px; font-family: Arial, sans-serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- About -->
+    <div style="flex: 1; min-width: 250px; margin: 15px;">
+      <h2 style="color: #f2c94c;">🏥 MediCare Hospital</h2>
+      <p>Providing quality healthcare with advanced technology and expert doctors.  
+      Your health is our priority.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div style="flex: 1; min-width: 200px; margin: 15px;">
+      <h3 style="color: #f2c94c;">Quick Links</h3>
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Departments</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Doctors</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div style="flex: 1; min-width: 250px; margin: 15px;">
+      <h3 style="color: #f2c94c;">Contact Us</h3>
+      <p>📍 123 Health Street, Indore, MP</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉ info@citycarehospital.com</p>
+    </div>
+
+    <!-- Social Media -->
+    <div style="flex: 1; min-width: 200px; margin: 15px;">
+      <h3 style="color: #f2c94c;">Follow Us</h3>
+      <a href="#" style="color: white; margin-right: 10px;">Facebook</a>
+      <a href="#" style="color: white; margin-right: 10px;">Instagram</a>
+      <a href="#" style="color: white; margin-right: 10px;">Twitter</a>
+      <a href="#" style="color: white;">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div style="text-align: center; margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px; font-size: 14px;">
+    © 2025 MediCare Hospital. All Rights Reserved.
+  </div>
+</footer>
+<script src="stylehealth.js">
+
+</script>

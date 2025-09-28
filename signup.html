@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Signup Form</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d4880;
+  }
+
+  .signup-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 400px;
+    max-width: 90%;
+  }
+
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .signup-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+
+  .signup-container input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+
+  .signup-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .signup-container button:hover {
+    background-color: #45a049;
+  }
+
+  /* Responsive for smaller screens */
+  @media (max-width: 480px) {
+    .signup-container {
+      padding: 20px;
+    }
+    .signup-container h2 {
+      font-size: 22px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="signup-container">
+  <h2>Sign Up</h2>
+  <form action="#" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+    <label for="confirm-password">Confirm Password</label>
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required>
+<div class="btn3" style="padding: 10%; gap: 2vw;">
+    <button type="submit">Sign Up</button>
+    </div>
+    <button type="submit" style="margin-top: 10px;"><a href="login.html"  style="text-decoration: none; color: aliceblue;">Login</a></button>
+  </form>
+</div>
+
+</body>
+</html>
